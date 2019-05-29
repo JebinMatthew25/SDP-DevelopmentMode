@@ -71,7 +71,16 @@ set JAVA_OPTS = %JAVA_OPTS% -Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESC
 rem ################# For DB support ################
 '''
 
-
+##############################################################################
+where_4 = "webapps/ROOT/WEB-INF/web.xml"
+what_4 = '''
+                <param-name>development.mode</param-name>
+              <param-value>false</param-value>
+'''
+with_what_4 = '''
+                <param-name>development.mode</param-name>
+              <param-value>true</param-value>
+'''
 #############################################################################
 
 def extract_it():
@@ -93,6 +102,7 @@ if __name__ == "__main__":
     alter_file(where_1, what_1, with_what_1)
     alter_file(where_2, what_2, with_what_2)
     alter_file(where_3, what_3, with_what_3)
+    alter_file(where_4, what_4, with_what_4)
     extract_it()
     print("Thank you!")
     print("Credits: Jebin-8730")
