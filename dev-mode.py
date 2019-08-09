@@ -99,10 +99,11 @@ def alter_file(path, what, with_what):
     print("Altered " + path)    
 
 if __name__ == "__main__":
+    extract_it()
     alter_file(where_1, what_1, with_what_1)
     alter_file(where_2, what_2, with_what_2)
     alter_file(where_3, what_3, with_what_3)
     alter_file(where_4, what_4, with_what_4)
-    extract_it()
     print("Thank you!")
     print("Credits: Jebin-8730")
+    input("Press Enter to quit...")
