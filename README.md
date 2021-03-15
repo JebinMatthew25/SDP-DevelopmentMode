@@ -1,8 +1,6 @@
-###SDP-Tools
+# SDP-Tools
 
-----
-
-#### Overview
+## Overview
 This project has `.py` files and `.bat` files which can be used to install AE/SDP zips, change app and db ports, download and apply developmode, etc.
 
 ### Requirements:
